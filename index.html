@@ -292,18 +292,22 @@
             form.reportValidity();
             return;
           }
-          var payload = {
-            name: document.getElementById('name').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            role: document.getElementById('role').value,
-            interests: document.getElementById('interests').value.trim()
-          };
+          var nameVal = document.getElementById('name').value.trim();
+          var phoneVal = document.getElementById('phone').value.trim();
+          var emailVal = document.getElementById('email').value.trim();
+          var roleVal = document.getElementById('role').value;
+          var interestsVal = document.getElementById('interests').value.trim();
+          var textBody =
+            'Name: ' + nameVal + '\n' +
+            'Phone: ' + phoneVal + '\n' +
+            'Email: ' + emailVal + '\n' +
+            'Role: ' + roleVal + '\n' +
+            'Interests: ' + interestsVal;
           var endpoint = form.getAttribute('action');
           fetch(endpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload),
+            headers: { 'Content-Type': 'text/plain' },
+            body: textBody,
             credentials: 'omit',
             mode: 'cors',
             cache: 'no-cache'
