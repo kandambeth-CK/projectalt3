@@ -222,8 +222,9 @@
             <img src="image1.png" class="img-fluid rounded-4" alt="Connect with Project ALT to make justice accessible">
           </div>
           <div class="col-12 col-lg-6">
-            <h2 class="h3 fw-bold mb-3">If you’re a law school, lawyer, social organization, or partner who wants to make justice accessible, connect with us.</h2>
-            <form method="post" action="https://hook.us1.make.com/hqfdlxtgomvcwm8g5j1w58ddwiv9qo4x">
+            <h2 class="h3 fw-bold mb-2">Collaborate with Us</h2>
+            <p class="text-secondary mb-3">If you are a Probono lawyer, Law student or a civil society organization interested to be part of our mission,connect with us</p>
+            <form id="contactForm" method="post" action="https://hook.us1.make.com/hqfdlxtgomvcwm8g5j1w58ddwiv9qo4x">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input id="name" name="name" type="text" class="form-control" required>
@@ -281,6 +282,16 @@
 
     <!-- Bootstrap JS (Bundle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function() {
+        var form = document.getElementById('contactForm');
+        if (form) {
+          form.addEventListener('submit', function() {
+            alert('Thank you for reaching out, Please look out for an email from us');
+          });
+        }
+      })();
+    </script>
     <footer class="bg-light border-top text-muted py-4">
       <div class="container" style="max-width: var(--maxw);">
         <div class="row align-items-center gy-3">
