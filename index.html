@@ -285,11 +285,40 @@
     <script>
       (function() {
         var form = document.getElementById('contactForm');
-        if (form) {
-          form.addEventListener('submit', function() {
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+          var payload = {
+            name: document.getElementById('name').value.trim(),
+            phone: document.getElementById('phone').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            role: document.getElementById('role').value,
+            interests: document.getElementById('interests').value.trim()
+          };
+          var endpoint = form.getAttribute('action');
+          fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+            credentials: 'omit',
+            mode: 'cors',
+            cache: 'no-cache'
+          }).then(function() {
+            alert('Thank you for reaching out, Please look out for an email from us');
+            var statusEl = document.getElementById('formStatus');
+            if (statusEl) {
+              statusEl.classList.remove('visually-hidden');
+              statusEl.textContent = 'Thanks! We have received your details.';
+            }
+            form.reset();
+          }).catch(function() {
             alert('Thank you for reaching out, Please look out for an email from us');
           });
-        }
+        });
       })();
     </script>
     <footer class="bg-light border-top text-muted py-4">
