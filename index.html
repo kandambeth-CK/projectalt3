@@ -254,7 +254,7 @@
               <div class="d-grid d-sm-flex">
                 <button type="submit" class="btn btn-accent">Submit</button>
               </div>
-              <div id="formStatus" class="visually-hidden" aria-live="polite"></div>
+              
             </form>
           </div>
         </div>
@@ -309,11 +309,6 @@
             cache: 'no-cache'
           }).then(function() {
             alert('Thank you for reaching out, Please look out for an email from us');
-            var statusEl = document.getElementById('formStatus');
-            if (statusEl) {
-              statusEl.classList.remove('visually-hidden');
-              statusEl.textContent = 'Thanks! We have received your details.';
-            }
             form.reset();
           }).catch(function() {
             alert('Thank you for reaching out, Please look out for an email from us');
