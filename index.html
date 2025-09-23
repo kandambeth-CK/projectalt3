@@ -88,8 +88,7 @@
       <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#home">
-            <img src="logo.png" alt="Project ALT logo" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('d-none');">
-            <span class="brand-text d-none fw-bold ms-2">Project ALT</span>
+            <img src="logo.png" alt="Project ALT logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -97,7 +96,7 @@
           <div class="collapse navbar-collapse" id="primaryNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#theory">Theory of Change</a></li>
+              <li class="nav-item"><a class="nav-link" href="#theory">Approach</a></li>
               <li class="nav-item"><a class="nav-link" href="#who">Who We Are</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
@@ -115,7 +114,7 @@
             <p class="subheadline lead mb-3">Bringing together pro bono lawyers, law schools, paralegals, social workers, and prison systems on a connected digital platform to drive systemic change for undertrials across India.</p>
             <p class="subheadline fw-semibold mb-4">Alternate Access to Legal Aid through Technology</p>
             <div class="d-flex flex-wrap gap-3">
-              <a href="#contact" class="btn btn-accent btn-lg">Collaborate With Us</a>
+              <button type="button" class="btn btn-accent btn-lg" data-bs-toggle="modal" data-bs-target="#collabModal">Collaborate With Us</button>
               <a class="btn btn-outline-secondary btn-lg" href="https://joinmotive.org/sign_in?network=Project%20ALT">Sign up on the Platform</a>
             </div>
           </div>
@@ -153,57 +152,52 @@
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Rahul.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Rahul">
+              <img src="Rahul.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Rahul">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Rahul</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Karan.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Karan">
+              <img src="Karan.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Karan">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Karan</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Shivani.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Shivani">
+              <img src="Shivani.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Shivani">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Shivani</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Shubhra.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Shubhra">
+              <img src="Shubhra.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Shubhra">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Shubhra</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Mohit.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Mohit">
+              <img src="Mohit.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Mohit">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Mohit</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Girish.png" class="img-fluid w-100 rounded-top-4" alt="Profile photo of Girish">
+              <img src="Girish.png" class="w-100 rounded-top-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Girish">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Girish</h3>
                 <p class="mb-0 text-secondary">About text from blueprint.</p>
@@ -213,7 +207,6 @@
         </div>
       </div>
     </section>
-
     <!-- Contact -->
     <section id="contact" class="py-5">
       <div class="container" style="max-width: var(--maxw);">
@@ -260,7 +253,6 @@
         </div>
       </div>
     </section>
-
     <!-- Collaborate Modal -->
     <div class="modal fade" id="collabModal" tabindex="-1" aria-labelledby="collabModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
