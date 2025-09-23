@@ -80,6 +80,33 @@
         border-color: #c74343;
         color: #fff;
       }
+
+      /* Who We Are - Team cards: show only photos; reveal details on hover */
+      .team-card {
+        position: relative;
+        overflow: hidden;
+      }
+      .team-card .card-body {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0));
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+      }
+      .team-card:hover .card-body,
+      .team-card:focus-within .card-body {
+        opacity: 1;
+      }
+      .team-card .card-body h3 {
+        color: #fff;
+      }
+      .team-card .card-body p {
+        color: #e9ecef;
+      }
     </style>
   </head>
   <body>
@@ -150,61 +177,61 @@
         </div>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Karan.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Karan">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Karan.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Karan">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Karan</h3>
-                <p class="mb-0 text-secondary">Connects directly with families of marginalized prisoners and strengthens partnerships with lawyers. With a background in social impact projects, he focuses on making legal aid more accessible and practical.</p>
+                <p class="mb-0">Connects directly with families of marginalized prisoners and strengthens partnerships with lawyers. With a background in social impact projects, he focuses on making legal aid more accessible and practical.</p>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Rahul.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Rahul">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Rahul.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Rahul">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Rahul</h3>
-                <p class="mb-0 text-secondary">Leads partnerships with lawyers. Pursuing Social Work at IGNOU, he combines academic knowledge with practical engagement in justice initiatives. He envisions technology and partnerships working together to simplify complex legal processes.</p>
+                <p class="mb-0">Leads partnerships with lawyers. Pursuing Social Work at IGNOU, he combines academic knowledge with practical engagement in justice initiatives. He envisions technology and partnerships working together to simplify complex legal processes.</p>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Shivani.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Shivani">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Shivani.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Shivani">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Shivani</h3>
-                <p class="mb-0 text-secondary">Leads outreach efforts at Project ALT, building connections between families of prisoners and legal aid networks. She focuses on strengthening awareness, trust, and participation within communities impacted by incarceration.</p>
+                <p class="mb-0">Leads outreach efforts at Project ALT, building connections between families of prisoners and legal aid networks. She focuses on strengthening awareness, trust, and participation within communities impacted by incarceration.</p>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Shubhra.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Shubhra">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Shubhra.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Shubhra">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Shubhra</h3>
-                <p class="mb-0 text-secondary">Political Science postgraduate from Delhi University. At Project ALT she drives strategy, fundraising, and operations to scale its impact. Her leadership ensures that the tech platform not only connects families with lawyers but also sustains long-term change.</p>
+                <p class="mb-0">Political Science postgraduate from Delhi University. At Project ALT she drives strategy, fundraising, and operations to scale its impact. Her leadership ensures that the tech platform not only connects families with lawyers but also sustains long-term change.</p>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Mohit.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Mohit Raj">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Mohit.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Mohit Raj">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Mohit Raj</h3>
-                <p class="mb-0 text-secondary">Founder &amp; Executive Director of TYCIA Foundation. An Obama Foundation Scholar, Ashoka Fellow, and Clinton Fellow. Mohit’s vision drives inclusive, equitable change through leadership and innovation.</p>
+                <p class="mb-0">Founder &amp; Executive Director of TYCIA Foundation. An Obama Foundation Scholar, Ashoka Fellow, and Clinton Fellow. Mohit’s vision drives inclusive, equitable change through leadership and innovation.</p>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0 rounded-4">
-              <img src="Girish.png" class="w-100 rounded-top-4 shadow-sm" style="height: 220px; object-fit: cover;" alt="Profile photo of Girish">
+            <div class="card h-100 shadow-sm border-0 rounded-4 team-card">
+              <img src="Girish.png" class="w-100 rounded-4" style="height: 220px; object-fit: cover;" alt="Profile photo of Girish">
               <div class="card-body p-3">
                 <h3 class="h6 fw-bold mb-2">Girish</h3>
-                <p class="mb-0 text-secondary">Leads the Product and Technology at Project ALT. Ex-Microsoft, 2X Legal-tech founder, 17 years work experience in technology. Lead product development for Maryland Justice Passport, American Equity and Justice Group and other Access to Justice initiatives.</p>
+                <p class="mb-0">Leads the Product and Technology at Project ALT. Ex-Microsoft, 2X Legal-tech founder, 17 years work experience in technology. Lead product development for Maryland Justice Passport, American Equity and Justice Group and other Access to Justice initiatives.</p>
               </div>
             </div>
           </div>
