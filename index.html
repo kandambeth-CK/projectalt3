@@ -110,6 +110,12 @@
       .team-card .card-body p {
         color: #e9ecef;
       }
+
+      /* Ensure team photos are not cropped; keep fixed dimensions */
+      .team-card img {
+        object-fit: contain !important;
+        object-position: center top;
+      }
     </style>
   </head>
   <body>
